@@ -24,13 +24,13 @@ When run, `main.R` performs the analyses.
 eICU datasets are available from PhysioNet:
 
 > Pollard T, Johnson A, Raffa J, Celi L A, Badawi O, Mark R. eICU Collaborative Research Database (version 2.0). 
-> PhysioNet. 2019. Available from: (https://doi.org/10.13026/C2WM1R)[https://doi.org/10.13026/C2WM1R].
+> PhysioNet. 2019. Available from: https://doi.org/10.13026/C2WM1R .
 
 The eICU and PhysioNet programs are described here:
 
 > Pollard TJ, Johnson AEW, Raffa JD, Celi LA, Mark RG and Badawi O. The eICU Collaborative Research Database, 
 > a freely available multi-center database for critical care research. 
-> Scientific Data. 2018. DOI: (http://dx.doi.org/10.1038/sdata.2018.178)[http://dx.doi.org/10.1038/sdata.2018.178].
+> Scientific Data. 2018. DOI: http://dx.doi.org/10.1038/sdata.2018.178 .
 
 > Goldberger A, Amaral L, Glass L, Hausdorff J, Ivanov PC, Mark R, Mietus JE, Moody GB, Peng CK, Stanley HE. 
 > PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals.

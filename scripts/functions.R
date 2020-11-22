@@ -105,7 +105,7 @@ caliper_time_match <- function(
 summary_table_col <- function(
   data
 ) {
-  # Prepare a column for summary table ("Table 1" table)
+  # Prepare a column for summary table (Table 1)
 
   rnd <- function(x) round(x, 1)
   miqr <- function(x, d = 1) {
@@ -160,8 +160,7 @@ summary_table_col <- function(
   
 
   data$table.sepsis <- ifelse(data$apacheadmissiondx %in% 
-    c('Sepsis, gynecologic', 'Sepsis, pulmonary', 
-      'Sepsis, renal/UTI (including bladder)',
+    c('Sepsis, gynecologic', 'Sepsis, pulmonary', 'Sepsis, renal/UTI (including bladder)',
       'Sepsis, GI', 'Sepsis, unknown', 'Sepsis, cutaneous/soft tissue',
       'Sepsis, other'),
      1, 0)
@@ -197,21 +196,17 @@ summary_table_col <- function(
     'Head/pelvis trauma', 'Abdomen/pelvis trauma', 'Extremity/face trauma',
     'Chest/face trauma', 'Head/abdomen trauma', 'Pelvis/multiple trauma',
     'Pelvis/extremity trauma', 'Spinal/face trauma', 'Face/multiple trauma',
-    'Extremity/multiple trauma', 'Abdomen/extremity trauma', 
-    'Trauma medical, other',
+    'Extremity/multiple trauma', 'Abdomen/extremity trauma', 'Trauma medical, other',
     'Spinal/extremity trauma', 'Face only trauma', 'Chest/spinal trauma', 
-    'Chest/extremity trauma', 'Spinal/multiple trauma', 
-    'Abdomen/multiple trauma',
+    'Chest/extremity trauma', 'Spinal/multiple trauma', 'Abdomen/multiple trauma',
     'Abdomen only trauma', 'Pelvis/hip trauma', 'Chest/abdomen trauma', 
     'Head/spinal trauma', 'Head/chest trauma', 'Extremity only trauma',
-    'Chest thorax only trauma', 'Spinal cord only trauma', 
-    'Head/extremity trauma',
+    'Chest thorax only trauma', 'Spinal cord only trauma', 'Head/extremity trauma',
     'Chest/multiple trauma', 'Head/face trauma', 'Head/multiple trauma', 
     'Head only trauma', 
     'Extremity/face trauma, surgery for', 'Face/multiple trauma, surgery for',
     'Trauma surgery, other', 'Face only trauma, surgery for', 
-    'Extremity/multiple trauma, surgery for', 
-    'Extremity only trauma, surgery for'
+    'Extremity/multiple trauma, surgery for', 'Extremity only trauma, surgery for'
     ),
      1, 0)
 
@@ -269,6 +264,7 @@ summary_table_col <- function(
   res
 
 }
+
 
 
 format_and_save_table <- function(
