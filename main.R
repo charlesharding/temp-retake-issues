@@ -1,4 +1,4 @@
-## Scripts run with R version 3.5.2 (2018-12-20)
+## Scripts were run in 2020 with R version 3.5.2 on 64-bit Windows 10
 
 ## Load packages
 
@@ -43,6 +43,7 @@ clean_matched_path <- file.path(
 char_table_path <- file.path(
   '.', 'results', paste0('char-table-', caliper, '-min.docx')
 )
+
 
 ## Load functions
 

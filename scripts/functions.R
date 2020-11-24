@@ -95,7 +95,6 @@ caliper_time_match <- function(
   
   # Drop any admissions with no matches found
   res <- res[lapply(res, length) > 0]  
-  
   res
 }
 
@@ -260,12 +259,8 @@ summary_table_col <- function(
       sum(!is.finite(pdata$predictedicumortality)), np
     )
   )
-  
   res
-
 }
-
-
 
 format_and_save_table <- function(
   data, # Data frame
@@ -273,7 +268,6 @@ format_and_save_table <- function(
   caption = NULL, # Table caption
   footnotes = NULL
 ) {
-
   ft <- flextable(data)
   if(!is.null(caption)){
     ft <- set_caption(ft, caption = caption)
@@ -290,11 +284,7 @@ format_and_save_table <- function(
   ft <- align(ft, align = 'center', part = 'all')
   ft <- align(ft, j = 1, align = 'left', part = 'all')
   ft <- autofit(ft)
-  save_as_docx(
-    "Table" = ft, 
-    path = path
-  )
-
+  save_as_docx("Table" = ft, path = path)
 }
 
 
@@ -807,10 +797,7 @@ bland_plot <- function(
           size = 0.5,
           color = color_loa_q_single
       ) 
-
   }
-  
   print(figure)
-  
 }
 

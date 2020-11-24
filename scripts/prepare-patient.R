@@ -42,7 +42,6 @@ keep_vars <- c('patientunitstayid', 'uniquepid', 'gender', 'age', 'ethnicity',
 
 patient_data <- patient_data[ , keep_vars ]
 
-
 # Save data          
 write.csv(patient_data, file = clean_patient_path)
 

@@ -110,7 +110,6 @@ vs_same_data <- reorder_sites(
 
 ## Run Bland-Altman analyses
 
-# vs_central_bland_data <- bland_res(vs_central_data) 
 vs_central_bland_data <- bland_res_boot(vs_central_data)
 
 for(methods_comparison in c(FALSE, TRUE)){
@@ -139,7 +138,6 @@ for(methods_comparison in c(FALSE, TRUE)){
 }
 
 vs_same_bland_data <- bland_res_boot(vs_same_data)
-
 
 for(methods_comparison in c(FALSE, TRUE)){
   bland_plot(

@@ -16,8 +16,7 @@ Analyses are of the the eICU Collaborative Research Database, version 2.0.
 eICU dataset files `nurseCharting.csv`, `patient.csv`, `apachePatientResult.csv`, and 
 `apachePredVar.csv` need to be placed in the `raw data` folder. 
 
-When run, `main.R` performs the analyses.
-
+When run, `main.R` performs the analyses. All scripts are in R. 
 
 ## Resources
 

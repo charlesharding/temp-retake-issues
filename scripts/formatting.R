@@ -25,8 +25,8 @@ theme_pub_ext <- theme_pub_ext + theme(
 theme_pub_ext <- theme_pub_ext + theme(
   legend.title = element_text(face = "plain", size = 8),
   plot.title =  element_text(face = "bold", size = 9, vjust= 2, hjust = 0.5),
-  plot.subtitle = element_text(face="bold", size= 9, hjust = 0.5),
-  strip.text = element_text(face = "plain", size=8)
+  plot.subtitle = element_text(face = "bold", size = 9, hjust = 0.5),
+  strip.text = element_text(face = "plain", size =8)
 )
 theme_pub_ext <- theme_pub_ext + theme(
   panel.grid.major.x = element_line(linetype = "solid", color = "gray92"),
@@ -44,51 +44,50 @@ theme_pub_ext <- theme_pub_ext + theme(
 )
 theme_pub_ext <- theme_pub_ext + theme(text = element_text("Roboto Condensed")) 
 
-
 # Functions for adding degree symbols to axes
 
 degreeFormat <- function(x, ...) {
-     parse(text = paste(x, "*degree", sep = ""))
-    }
+  parse(text = paste(x, "*degree", sep = ""))
+}
 
 degreeF <- function(x, ...) {
-     parse(text = paste(x, "*degree*F", sep = ""))
-    }
+  parse(text = paste(x, "*degree*F", sep = ""))
+}
 
 degreeC <- function(x, ...) {
-     parse(text = paste(x, "*degree*C", sep = ""))
-    }
-    
+  parse(text = paste(x, "*degree*C", sep = ""))
+}
+
 dF <- function(x) {
-    # Degree formatter with 3 places before decimal and 1 after
-    y <- as.character(round(x, 1))
-    y[floor(x/100) == 0] <- paste0(" ", y[floor(x/100) == 0])
-    y[x %% 1 == 0] <- paste0(y[x %% 1 == 0], ".0")
-    paste0(y, "\n\u00B0F")
-    }
+  # Degree formatter with 3 places before decimal and 1 after
+  y <- as.character(round(x, 1))
+  y[floor(x/100) == 0] <- paste0(" ", y[floor(x/100) == 0])
+  y[x %% 1 == 0] <- paste0(y[x %% 1 == 0], ".0")
+  paste0(y, "\n\u00B0F")
+}
  
 dC <- function(x) {
-    # Degree formatter with 2 places before decimal and 1 after
-    y <- as.character(round(x, 1))
-    y[floor(x/10) == 0] <- paste0(" ", y[floor(x/10) == 0])
-    y[x %% 1 == 0] <- paste0(y[x %% 1 == 0], ".0")
-     paste0(y, "\n\u00B0C")
-    }
+  # Degree formatter with 2 places before decimal and 1 after
+  y <- as.character(round(x, 1))
+  y[floor(x/10) == 0] <- paste0(" ", y[floor(x/10) == 0])
+  y[x %% 1 == 0] <- paste0(y[x %% 1 == 0], ".0")
+   paste0(y, "\n\u00B0C")
+}
     
 dFS <- function(x) {
-    # Like dF, but without splitting the result across
-    # two lines
-    y <- as.character(round(x, 1))
-    y[floor(x/100) == 0] <- paste0(" ", y[floor(x/100) == 0])
-    y[x %% 1 == 0] <- paste0(y[x %% 1 == 0], ".0")
-    paste0(y, "\u00B0F")
-    }
+  # Like dF, but without splitting the result across
+  # two lines
+  y <- as.character(round(x, 1))
+  y[floor(x/100) == 0] <- paste0(" ", y[floor(x/100) == 0])
+  y[x %% 1 == 0] <- paste0(y[x %% 1 == 0], ".0")
+  paste0(y, "\u00B0F")
+}
     
 dCS <- function(x) {
-    # Like dC, but without splitting the result across
-    # two lines
-    y <- as.character(round(x, 1))
-    y[floor(x/10) == 0] <- paste0(" ", y[floor(x/10) == 0])
-    y[x %% 1 == 0] <- paste0(y[x %% 1 == 0], ".0")
-     paste0(y, "\u00B0C")
-    }
+  # Like dC, but without splitting the result across
+  # two lines
+  y <- as.character(round(x, 1))
+  y[floor(x/10) == 0] <- paste0(" ", y[floor(x/10) == 0])
+  y[x %% 1 == 0] <- paste0(y[x %% 1 == 0], ".0")
+  paste0(y, "\u00B0C")
+}

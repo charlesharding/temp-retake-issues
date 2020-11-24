@@ -82,7 +82,6 @@ setkey(celsius_data, patientunitstayid, nursingchartoffset)
 setkey(fahrenheit_data, patientunitstayid, nursingchartoffset)
 setkey(location_data, patientunitstayid, nursingchartoffset)
 
-
 # celsius_data FULL OUTER JOIN fahrenheit_data
 chart_data <- merge(celsius_data, fahrenheit_data, all = TRUE)
 # dim(chart_data)
@@ -192,7 +191,6 @@ chart_data <- chart_data[
 # dim(chart_data)
 # [1] 6267876       7
 
-
 # Clean location (measurement site) data
 
 # Recode site synonyms, referencing table(location_data$chartsite)
@@ -269,7 +267,6 @@ location_data <- location_data[
 # Combine chart and site data:
 # chart_data LEFT OUTER JOIN location_data
 chart_data <- location_data[chart_data]
-
 
 # Recode NA to 'Unknown and other'
 chart_data$site <- ifelse(
