@@ -40,3 +40,6 @@ The eICU and PhysioNet programs are described here:
 
 The study was funded by Exergen, Corp., a manufacturer of temporal artery thermometers, and the authors
 are affiliated with or consult for Exergen. 
+
+Given our conflicts of interest on the research topic, we decided to use publicly available data for our
+study and to publish our study's code here in the interest of transparency.
