@@ -2,12 +2,11 @@
 
 This repository contains scripts that can be used to check and replicate the findings of
 
-> Harding C, Pompei M, Burmistrov D, Pompei F. Overlooked bias with thermometer evaluations 
-> using quickly retaken temperatures in EHR: applications to axillary, oral, temporal artery,
-> and tympanic thermometry [Preprint]. medRxiv. 2020. doi: https://doi.org/10.1101/2020.11.24.20237958
+> Harding C, Pompei M, Burmistrov D, Pompei F. Overlooked bias with thermometer evaluations using 
+> quickly retaken temperatures in EHR: axillary, oral, temporal artery, and tympanic thermometry. 
+> J Gen Intern Med (2021). DOI: https://doi.org/10.1007/s11606-021-06930-2
 
-The article is in submission.
-
+A medRxiv preprint of this article can be found here: https://doi.org/10.1101/2020.11.24.20237958
 
 ## Getting started
 
